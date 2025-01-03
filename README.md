@@ -16,7 +16,7 @@ A simple Loan **EMI (Equated Monthly Installment) calculator** that allows users
 
 - [📂 File Structure](#file-structure)
 
-- [🔍 Code Explanation](#code-explanation)
+- [🔍 Code Explanation](#codeexplanation)
 
 - [🤝 Contributing](#contributing)
 
