@@ -232,7 +232,7 @@ If you'd like to contribute to this project, please fork the repository and crea
 
 You can check out a live demo of the Loan EMI Calculator here:
 
-[Live Demo](#) 
+[Live Demo](https://loan-emis-calculator.netlify.app) 
 
 ---
 
