@@ -238,6 +238,6 @@ You can check out a live demo of the Loan EMI Calculator here:
 
 For any inquiries, suggestions, or feedback, feel free to reach out:
 
-- **Email**: [Sudhanshu Jha](mailto-sudhanshujha164@gmail.com)
+- **Email**: [Sudhanshu Jha](sudhanshujha164@gmail.com)
 
 - **GitHub**: [My GitHub Profile](https://github.com/sudhanshu-j)
