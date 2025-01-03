@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+<html lang="en">
+  <!-- Starts the HTML document and specifies the language as English -->
+  <head>
+    <!-- Head section contains metadata and links to styles and scripts -->
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding as UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sets the viewport for responsive design, scales the page based on device width -->
+
+    <title>EMI Calculator</title>
+    <!-- Sets the title of the page that appears in the browser's tab -->
+
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Links the external CSS file for styling the page -->
+
+    <link rel="icon" type="image/png" href="/fav-icon.png" />
+    <!-- Sets the favicon for the page, linking to a PNG image -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!-- Links the Google Fonts stylesheet for Material Symbols Outlined font -->
+  </head>
+  <body>
+    <!-- The body contains the visible content of the page -->
+    <div class="container">
+      <!-- Wrapper for the main content with class 'container' for layout styling -->
+      <h1>Loan EMI's Calculator</h1>
+      <!-- Heading for the page -->
+
+      <div class="row">
+        <!-- Starts a new row of layout -->
+        <div class="column col-1">
+          <!-- First column with class 'col-1' -->
+          <div class="row row-1">
+            <!-- Row within the first column -->
+            <div class="column col-1.1">
+              <!-- Nested column within the first row -->
+              <label for="loanAmount">Loan Amount(₹)</label>
+              <!-- Label for the loan amount input field -->
+              <input type="text" id="loanAmount" />
+              <!-- Input field for entering loan amount, with ID 'loanAmount' -->
+            </div>
+
+            <div class="column col-1.1">
+              <!-- Another nested column within the first row -->
+              <label for="interestRate">Interest Rate (%)</label>
+              <!-- Label for the interest rate input field -->
+              <input type="text" id="interestRate" />
+              <!-- Input field for entering interest rate, with ID 'interestRate' -->
+            </div>
+
+            <div class="column col-1.1">
+              <!-- Another nested column within the first row -->
+              <label for="loanTenure">Loan Tenure (Years)</label>
+              <!-- Label for the loan tenure input field -->
+              <input type="text" id="loanTenure" />
+              <!-- Input field for entering loan tenure, with ID 'loanTenure' -->
+            </div>
+          </div>
+        </div>
+
+        <div class="column col-2">
+          <!-- Second column with class 'col-2' -->
+          <div class="card">
+            <!-- Card layout to display EMI results -->
+            <div class="row">
+              <!-- Starts a row within the card -->
+              <div class="column">
+                <!-- A column inside the row for EMI amount -->
+                <label for="emiAmount"> EMI Amount </label>
+                <!-- Label for the EMI amount display -->
+                <strong id="emiAmount">00.00</strong>
+                <!-- Strong element to display the EMI amount, initially set to '00.00' -->
+              </div>
+
+              <div class="column">
+                <!-- Another column inside the row for total interest -->
+                <label for="totalInterest"> Total Interest </label>
+                <!-- Label for the total interest display -->
+                <strong id="totalInterest">00.00</strong>
+                <!-- Strong element to display the total interest, initially set to '00.00' -->
+              </div>
+            </div>
+            <button id="btn">
+              Calculate EMI
+              <span class="material-symbols-outlined"> calculate </span>
+              <!-- Material Symbols Outlined icon for 'calculate' -->
+            </button>
+            <!-- Button to trigger the EMI calculation, with ID 'btn' -->
+
+            <button id="btn-2">
+              Clear
+              <span class="material-symbols-outlined"> backspace </span>
+              <!-- Material Symbols Outlined icon for 'delete_forever' -->
+            </button>
+            <!-- Button to clear the input fields, with ID 'btn-2' -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/app.js"></script>
+  <!-- Links the external JavaScript file ('app.js') for functionality -->
+</html>

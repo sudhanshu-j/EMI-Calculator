@@ -1,0 +1,177 @@
+/* Google Font = Playfair Display */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* Universal Selector */
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box; /* Ensures that elements in WebKit-based browsers (like Safari) include padding and border in their width/height */
+  -moz-box-sizing: border-box; /* Ensures Firefox includes padding and border in width/height */
+  -ms-box-sizing: border-box; /* Ensures Internet Explorer/Edge includes padding and border in width/height */
+  box-sizing: border-box; /* Sets the box-sizing to 'border-box' for all elements, including their pseudo-elements. This means padding and borders are included in the element's total width and height. */
+}
+
+/* Body Styling */
+body {
+  font-family: "Playfair Display", serif; /* Sets the font for the body to Playfair Display or a serif fallback */
+  margin: 0; /* Removes any default margin applied by the browser */
+  padding: 0; /* Removes any default padding applied by the browser */
+  background: #120546; /* Dark blue background color for the body */
+  color: #fff; /* White text color for the body */
+  font-size: 18px; /* Sets the font size of the body text */
+  display: flex; /* Uses Flexbox layout for centering content */
+  justify-content: center; /* Centers the content horizontally within the body */
+  align-items: center; /* Centers the content vertically within the body */
+  min-height: 100vh; /* Ensures that the body takes at least the full height of the viewport */
+}
+
+/* Container Styling */
+.container {
+  width: 1100px; /* Sets a fixed width for the container */
+  margin: 0 auto; /* Centers the container horizontally within the body */
+  padding: 30px; /* Adds 30px padding inside the container */
+  border-radius: 30px; /* Rounds the corners of the container */
+  background: linear-gradient(
+    to bottom,
+    #e84393,
+    #6c5ce7
+  ); /* Adds a gradient background from pink to blue */
+}
+
+/* Heading Styling */
+h1 {
+  text-align: center; /* Centers the heading horizontally */
+  margin: 0 0 30px; /* Removes the top margin and adds 30px margin to the bottom */
+  text-transform: uppercase; /* Transforms the text to uppercase */
+}
+
+/* Row Styling */
+.row {
+  display: flex; /* Enables Flexbox layout within the row */
+  margin: 0 -15px; /* Removes the default margin and compensates for column padding */
+  flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
+}
+
+/* Column Styling */
+.column {
+  width: 50%; /* Sets each column to take 50% of the row's width */
+  max-width: 50%; /* Ensures the column doesn’t exceed 50% width */
+  padding: 0px 15px; /* Adds 15px padding on the left and right of each column */
+}
+
+/* Label Styling */
+label {
+  display: block; /* Makes labels block-level elements, taking up the full width */
+  margin-bottom: 8px; /* Adds a margin of 8px below each label */
+}
+
+/* Strong Styling */
+strong {
+  font-size: 28px; /* Sets the font size of strong elements (used for EMI & total interest) */
+}
+
+/* Input Styling */
+input {
+  width: 100%; /* Makes the input fields take the full width of their container */
+  padding: 10px 15px; /* Adds padding inside the input fields */
+  margin-bottom: 45px; /* Adds space below each input field */
+  font-size: 16px; /* Sets the font size for input text */
+  outline: 0; /* Removes the default outline around input fields */
+  border: 0; /* Removes the default border around input fields */
+  border-radius: 5px; /* Rounds the corners of input fields */
+}
+
+/* Card Styling */
+.card {
+  padding: 25px; /* Adds 25px padding inside the card */
+  border-radius: 15px; /* Rounds the corners of the card */
+  background-color: #120546; /* Gives the card a dark purple background */
+}
+
+/* Button Styling */
+button {
+  width: 80%; /* Sets the button's width to 80% of its container */
+  margin: 15px auto; /* Centers the button horizontally and adds 20px space above and below */
+  display: block; /* Makes the button a block-level element (so it takes up full width) */
+  background-color: #e44495; /* Sets the background color of the button to pink */
+  border: 0; /* Removes the default border around the button */
+  border-radius: 15px; /* Rounds the corners of the button */
+  padding: 8px 15px; /* Adds padding inside the button */
+  font-size: 18px; /* Sets the font size for the text inside the button */
+  color: #fff; /* Sets the button text color to white */
+  text-transform: uppercase; /* Transforms the button text to uppercase */
+  letter-spacing: 2px; /* Adds spacing between each letter in the button text */
+  cursor: pointer; /* Changes the cursor to a pointer when hovered over the button */
+}
+
+/* Button Hover Styling */
+button:hover {
+  background-color: #c7387e; /* Changes the background color of the button when hovered to a darker pink */
+}
+
+.card #btn,
+.card #btn-2 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card #btn span,
+.card #btn-2 span {
+  margin-left: 10px; /* Adds a margin-left to the button text */
+}
+
+.card #btn:hover span,
+.card #btn-2:hover span {
+  color: #fff; /* Changes the button text color to white when hovered over */
+  animation: rotate 180ms ease-in-out; /* Rotate the button icon when hovered over */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px; /* Reduces the font size for smaller screens */
+  }
+
+  .container {
+    border-radius: 0; /* Removes the border radius for smaller screens */
+  }
+
+  h1 {
+    font-size: 25px; /* Reduces the font size of the heading for smaller screens */
+  }
+
+  .row {
+    flex-direction: column; /* Stacks the columns vertically on smaller screens */
+  }
+
+  .column {
+    width: 100%; /* Makes each column take 100% width on smaller screens */
+    max-width: 100%; /* Ensures columns don’t exceed 100% width */
+    margin-bottom: 0px; /* Remove space between stacked columns */
+  }
+
+  #btn,
+  #btn-2 {
+    font-size: 15px; /* Reduces the font size of the button text on smaller screens */
+  }
+
+  .card .column {
+    font-size: 14px; /* Reduces the font size of the card content on smaller screens */
+    margin-bottom: 10px; /* Adds some space between the card content */
+  }
+
+  .card strong {
+    font-size: 20px; /* Reduces the font size of the 'strong' elements (EMI & total interest) inside the card */
+  }
+}
