@@ -1,6 +1,6 @@
 # EMI Calculator
 
-A simple Loan EMI (Equated Monthly Installment) calculator that allows users to calculate the EMI for a loan based on the loan amount, interest rate, and loan tenure. This web application provides an interactive user interface that displays the EMI amount and total interest to be paid on the loan.
+A simple Loan **EMI (Equated Monthly Installment) calculator** that allows users to calculate the EMI for a loan based on the **loan amount**, **interest rate**, and **loan tenure**. This web application provides an interactive user interface that displays the **EMI amount** and **total interest** to be paid on the loan.
 
 ---
 
@@ -36,7 +36,7 @@ The Loan EMI Calculator is a web-based tool designed to calculate the monthly EM
 
 - **Loan Tenure (Years)**
 
-Upon entering these details and clicking the "Calculate EMI" button, the user will receive:
+Upon entering these details and clicking the **"Calculate EMI"** button, the user will receive:
 
 - **EMI Amount**: The monthly installment amount that needs to be paid.
 
@@ -70,29 +70,29 @@ This project uses HTML for structure, CSS for styling, and JavaScript for functi
 
 ## How to Use
 
-1. Clone or download this repository to your local machine.
+1. **Clone or download this repository to your local machine.**
 
    ```bash
    git clone https://github.com/yourusername/loan-emi-calculator.git
    ```
 
-2. Open the `index.html` file in your browser.
+2. **Open the `index.html` file in your browser.**
 
-3. Enter the following details into the input fields:
+3. **Enter the following details into the input fields:**
 
-   - Loan Amount: The total amount of the loan.
+   - **Loan Amount**: The total amount of the loan.
 
-   - Interest Rate: The annual rate of interest (in percentage).
+   - **Interest Rate**: The annual rate of interest (in percentage).
 
-   - Loan Tenure: The duration of the loan in years.
+   - **Loan Tenure**: The duration of the loan in years.
 
 5. Click the "Calculate EMI" button to get the:
 
-   - EMI Amount: Your monthly installment.
+   - **EMI Amount**: Your monthly installment.
 
-   - Total Interest: The total interest you’ll pay over the course of the loan.
+   - **Total Interest**: The total interest you’ll pay over the course of the loan.
 
-7. Optionally, you can clear the input fields by refreshing the page or by uncommenting the reset code in the JavaScript file.
+6. Optionally, you can clear the input fields by refreshing the page or by clicking the "Clear" button.
 
 ---
 
@@ -112,7 +112,7 @@ This project uses HTML for structure, CSS for styling, and JavaScript for functi
 
 ### HTML (`index.html`)
 
-This file provides the structure of the Loan EMI calculator. It contains the following key sections:
+This file provides the structure of the Loan **EMI calculator**. It contains the following key sections:
 
 - **Form Inputs**:
 
@@ -127,6 +127,7 @@ This file provides the structure of the Loan EMI calculator. It contains the fol
   - Displays the **EMI Amount** and **Total Interest** after the calculation.
 
 - **Calculate Button**:
+
   - When clicked, it triggers the JavaScript function to calculate and display the EMI and total interest.
 
 ---
@@ -143,9 +144,10 @@ This file contains the styles used to make the Loan EMI Calculator look attracti
 
 - **Responsive Design**:
 
-  - Media queries adjust the layout for mobile devices (screen width ≤ 768px).
+  - **Media queries** adjust the layout for mobile devices (screen width ≤ 768px).
 
 - **Button & Input Styling**:
+
   - Styled the input fields and the **"Calculate EMI"** button to ensure they look appealing and interactive.
 
 ---
